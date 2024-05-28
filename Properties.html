@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="utf-8">
+    <!--ترميز المحارف في الصفحة-->
+    <meta keywords="register">
+    <!--كلمة مفتاحية تفيد في محركات البحث -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ملائمة قياس الصفحة لمختلف الاجهزة-->
+
+    <title>Appliances Page</title>
+    <link rel="stylesheet" href="Style.css" />
+</head>
+
+<body>
+    <header>
+        <img src="PG.png" id="imgheader" alt="header">
+    </header>
+    <table id="myTable" width="100%">
+        <thead>
+            <th>المدينة</th>
+            <th>التفاصيل</th>
+            <th>الإيجار الشهري</th>
+            <th>إظهار التفاصيل</th>
+            <th>الاختيار</th>
+        </thead>
+        <tbody class="tbodyProduct">
+            <tr>
+
+              <td>دمشق</td>
+                <td>شقة غرفتين وصالون 120م</td>
+                <td>500,000</td>
+                <td>
+                   <button id="myButton1" onclick="toggleDetails('details1');">تفاصيل</button>
+<div id="details1" style="display: none;">
+    
+      <img src="img/1.jpg" width="150px" height="150px" >
+      <li> المنطقة : مهاجرين</li>
+      <li> المساحة : 120م2</li>
+      <li> مفروشة</li>
+      <li> طابو</li>
+  </form>
+</div>
+                </td>
+
+                <td>
+                    
+                    <button onclick="addProduct('دمشق - مهاجرين',500000);">Add To Cart</button>
+                </td>
+            </tr>
+
+            <tr>
+
+                <td>دمشق</td>
+                  <td>شقة 4 غرف + وصالون</td>
+                  <td>100,000,000</td>
+                  <td>
+                    <button id="myButton2" onclick="toggleDetails('details2');">تفاصيل</button>
+<div id="details2" style="display: none;">
+      
+        <img src="img/2.jpg" width="150px" height="150px" >
+        <li> المنطقة : مشروع دمر</li>
+        <li> المساحة : 400م2</li>
+        <li> أربع غرف نوم + حمامين</li>
+        <li> كراج مساحة 100م + موقف + ملجأ</li>
+        <li> مفروشة</li>
+        <li> طابو</li>
+    </form>
+  </div>
+                  </td>
+  
+                  <td>
+                      
+                      <button onclick="addProduct('دمشق - مشروع دمر',100000000);">Add To Cart</button>
+                  </td>
+              </tr>
+
+              <tr>
+
+                <td>دمشق</td>
+                  <td>ثلاث غرف نوم + صالونين</td>
+                  <td>3,000,000</td>
+                  <td>
+                    <button id="myButton3" onclick="toggleDetails('details3');">تفاصيل</button>
+<div id="details3" style="display: none;">
+      
+        <img src="img/3.jpg" width="150px" height="150px" >
+        <li> المنطقة : تنظيم كفرسوسة</li>
+        <li> المساحة : 200م2</li>
+        <li> ثلاث غرف نوم + صالونين + حمامين</li>
+        <li> طابق اول</li>
+        <li> مصعد طاقة شمسية</li>
+        <li> طابو أول</li>
+    </form>
+  </div>
+                  </td>
+  
+                  <td>
+                      
+                      <button onclick="addProduct('دمشق - تنظيم كفرسوسة',3000000);">Add To Cart</button>
+                  </td>
+              </tr>
+
+              <tr>
+
+                <td>دمشق</td>
+                  <td>غرفتين نوم + صالونين</td>
+                  <td>3,500,000</td>
+                  <td>
+                    <button id="myButton4" onclick="toggleDetails('details4');">تفاصيل</button>
+<div id="details4" style="display: none;">
+      
+        <img src="img/4.jpg" width="150px" height="150px" >
+        <li> المنطقة : أبو رمانة</li>
+        <li> المساحة : 180م2</li>
+        <li> غرفتين نوم + صالونين + حمامين</li>
+        <li> ثلاث برندات</li>
+        <li> اكساء وفرش ممتاز</li>
+        <li> طابق أول</li>
+        <li> طابو</li>
+    </form>
+  </div>
+                  </td>
+  
+                  <td>
+                      
+                      <button onclick="addProduct('دمشق - أبو رمانة',3500000);">Add To Cart</button>
+                  </td>
+              </tr>
+
+              <tr>
+
+                <td>دمشق</td>
+                  <td>غرفتين نوم وصالونين</td>
+                  <td>1,500,000</td>
+                  <td>
+                    <button id="myButton5" onclick="toggleDetails('details5');">تفاصيل</button>
+<div id="details5" style="display: none;">
+      
+        <img src="img/5.jpg" width="150px" height="150px" >
+        <li> المنطقة : مزة اتستراد</li>
+        <li> المساحة : 90م2</li>
+        <li> غرفتين نوم + صالونين</li>
+        <li> اكساء وفرش ممتاز</li>
+        <li> طابق سادس</li>
+        <li> طابو</li>
+    </form>
+  </div>
+                  </td>
+  
+                  <td>
+                      
+                      <button onclick="addProduct('دمشق - مزة اتستراد',1500000);">Add To Cart</button>
+                  </td>
+              </tr>
+
+              <tr>
+
+                <td>ريف دمشق</td>
+                  <td>غرفتين نوم وصالونين</td>
+                  <td>1,800,000</td>
+                  <td>
+                    <button id="myButton6" onclick="toggleDetails('details6');">تفاصيل</button>
+<div id="details6" style="display: none;">
+      
+        <img src="img/6.jpg" width="150px" height="150px" >
+        <li> المنطقة : جرمانا، عند دوار الروضة </li>
+        <li> المساحة : 100م2</li>
+        <li> غرفتين نوم + صالونين</li>
+        <li> اكساء وفرش ممتاز</li>
+        <li> طابق اول</li>
+        <li> طابو</li>
+    </form>
+  </div>
+                  </td>
+  
+                  <td>
+                      
+                      <button onclick="addProduct('دمشق - مزة اتستراد',1800000);">Add To Cart</button>
+                  </td>
+              </tr>
+
+              <tr>
+
+                <td> الإمارات - دبي</td>
+                  <td>غرفتين نوم وصالون</td>
+                  <td>1,160,000,000</td>
+                  <td>
+                    <button id="myButton7" onclick="toggleDetails('details7');">تفاصيل</button>
+<div id="details7" style="display: none;">
+      
+        <img src="img/7.jpg" width="150px" height="150px" >
+        <li> المنطقة : الإمارات - دبي  </li>
+        <li> المساحة : 1331م2</li>
+        <li> صالون + غرفتين نوم + ثلاث حمامات</li>
+        <li> اكساء وفرش ممتاز</li>
+        <li> طابق ثامن</li>
+    </form>
+  </div>
+                  </td>
+  
+                  <td>
+                      
+                      <button onclick="addProduct('دمشق - مزة اتستراد',1160000000);">Add To Cart</button>
+                  </td>
+              </tr>
+
+              <tr>
+
+                <td> الإمارات - دبي</td>
+                  <td> ثلاث غرف نوم و صالون</td>
+                  <td>288,000,000</td>
+                  <td>
+                    <button id="myButton8" onclick="toggleDetails('details8');">تفاصيل</button>
+<div id="details8" style="display: none;">
+      
+        <img src="img/8.jpg" width="150px" height="150px" >
+        <li> المنطقة : دبي - الضاحية 18 - بناء غالية  </li>
+        <li> المساحة : 831م2</li>
+        <li> صالون + ثلاث غرف + حمام حمامات</li>
+        <li> اكساء وفرش كامل</li>
+        <li> طابق مرتفع</li>
+    </form>
+  </div>
+                  </td>
+  
+                  <td>
+                      
+                      <button onclick="addProduct('دمشق - مزة اتستراد',288000000);">Add To Cart</button>
+                  </td>
+              </tr>
+
+              <tr>
+
+                <td> الإمارات - دبي</td>
+                  <td> ثلاث غرف نوم و صالون</td>
+                  <td>860,000,000</td>
+                  <td>
+                    <button id="myButton9" onclick="toggleDetails('details9');">تفاصيل</button>
+<div id="details9" style="display: none;">
+      
+        <img src="img/9.jpg" width="150px" height="150px" >
+        <li> المنطقة : دبي - سيرينا - بيلاكاسا  </li>
+        <li> المساحة : 3004م2</li>
+        <li> ثلاث غلاف نوم + ثلاث حمامات + صالون</li>
+        <li> اكساء وفرش كامل</li>
+        
+    </form>
+  </div>
+                  </td>
+  
+                  <td>
+                      
+                      <button onclick="addProduct('دمشق - مزة اتستراد',860000000);">Add To Cart</button>
+                  </td>
+              </tr>
+
+              <tr>
+
+                <td> الإمارات - دبي</td>
+                  <td> غرفة + صالون</td>
+                  <td>880,000,000</td>
+                  <td>
+                    <button id="myButton10" onclick="toggleDetails('details10');">تفاصيل</button>
+<div id="details10" style="display: none;">
+      
+        <img src="img/10.jpg" width="150px" height="150px" >
+        <li> المنطقة : بوليفارد - وسط مدينة دبي</li>
+        <li> المساحة : 814م2</li>
+        <li> ثلاث غلاف نوم + حمامين حمامات + صالون</li>
+        <li> ثلاث مسابح خاصة للبناء</li>
+        <li> اكساء وفرش كامل ممتاز</li>
+
+        
+    </form>
+  </div>
+                  </td>
+  
+                  <td>
+                      
+                      <button onclick="addProduct('دمشق - مزة اتستراد',860000000);">Add To Cart</button>
+                  </td>
+              </tr>
+
+
+        </tbody>
+    </table>
+
+    <table id="detalisTable" width="100%" border="1px">
+
+        <caption class="cartDetails">سلة المشتريات</caption>
+        <thead>
+            <tr>
+                <th> رقم العقار </th>
+                <th> منطقة العقار</th>
+                <th>السعر</th>
+                <th>الكمية</th>
+                <th>المجموع</th>
+            </tr>
+        </thead>
+    </table>
+    <table id="totalTable" width="100%" border="1">
+
+        <tr>
+            <td id="total-tax">نسبة المكتب 5% :</td>
+            <td id="tax"></td>
+        </tr>
+        <tr>
+            <td id="total-tax">المجموع النهائي :</td>
+            <td id="total"></td>
+        </tr>
+    </table>
+    <br>
+    <div id="submit-cancle">
+        <button id="submit" onclick="submitFunc();">متابعة</button>
+        <button id="cancle" onclick="clearfields();">إلغاء</button>
+    </div>
+    <br>
+    <hr>
+    <!-- بداية النموذج -->
+    <div id="purchaseForm" style="display: none;">
+        <form id="buyForm" onsubmit="return validateForm()" method="POST">
+            <label for="fullName">الاسم الكامل:</label>
+            <input type="text" id="fullName" name="fullName" pattern="[ء-ي ]+">
+
+            <label for="nationalID">الرقم الوطني:</label>
+            <input type="text" id="nationalID" name="nationalID" maxlength="14" required pattern="[0-9]+">
+
+            <label for="birthDate">تاريخ الميلاد:</label>
+            <input type="date" id="birthDate" name="birthDate" min="1950-01-01" max="2023-01-01">
+
+            <label for="mobileNumber">رقم الموبايل:</label>
+            <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="ex: 0955566655" maxlength="10"
+                pattern="(09[0-9]{8}|095[0-9]{7})">
+
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="verification"><b> الرجاء ادخال رمز الكابتشا: </b></label>
+
+            <input type="text" id="txtCaptcha"
+                style="text-align: center; border: none; font-weight: bold; font-size: 20px; font-family: Modern" />
+            <input type="text" placeholder="ادخل رمز الكابتشا" id="txtCompare" required />
+            <input type="button" id="refBtn" value="تحديث" onclick="Captcha();" />
+            <br>
+            <button type="submit">شراء</button>
+        </form>
+    </div>
+    <br>
+    <hr>
+    <footer>
+        <ol id="link">
+            <a href="home.html" class="link1" target="_blank" title="Go To Home Page">Home Page</a>
+            <br>
+            <br>
+            <a href="Aboutus.html" class="link2" target="_blank" title="Go To About Us Page"> About Us</a>
+            <br>
+            <br>
+            <a href="http://htsrstore.free.nf/" class="link3" target="_blank" title="Go To Hosting Website">رابط
+                الاستضافة</a>
+
+        </ol>
+        <br>
+    </footer>
+    <script src="JS/myFunctions.js" charset="utf-8"></script>
+</body>
+
+</html>
